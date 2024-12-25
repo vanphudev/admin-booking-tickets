@@ -1,0 +1,43 @@
+{
+   "compilerOptions": {
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "target": "ESNext",
+      "module": "ESNext",
+      "lib": ["ESNext", "DOM", "DOM.Iterable"],
+      "useDefineForClassFields": true,
+      "skipLibCheck": true,
+      "allowJs": true,
+      "moduleResolution": "bundler",
+      "sourceMap": true,
+      "declaration": true,
+      "preserveWatchOutput": true,
+      "removeComments": true,
+      "allowImportingTsExtensions": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "esModuleInterop": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "noImplicitAny": true,
+      "noFallthroughCasesInSwitch": true,
+      "useUnknownInCatchVariables": false,
+      "types": ["vite/client"],
+      "baseUrl": ".",
+      "paths": {
+         "@/*": ["src/*"],
+         "#/*": ["types/*"],
+         "@api/*": ["src/redux/api/services/*"],
+         "@pages/*": ["src/pages/*"],
+         "@components/*": ["src/components/*"],
+         "@theme/*": ["src/theme/*"],
+         "@store/*": ["src/redux/stores/*"],
+         "@utils/*": ["src/utils/*"],
+         "@slice/*": ["src/redux/slices/*"]
+      }
+   },
+   "include": ["src", "types"],
+   "exclude": ["node_modules", "dist"]
+}
